@@ -1,10 +1,15 @@
 #game.py file - this should run the rock paper scissors game
 
 import random #for the computer's selection
+import os
+
+from dotenv import load_dotenv
+load_dotenv()
+USER_NAME = os.getenv("USER_NAME", default = "Player One")
 
 #title - should print player's name
 print("-------------------")
-print("Welcome 'Player One' to Rock, Paper, Scissors, Shoot!")
+print(f"Welcome '{USER_NAME}' to Rock, Paper, Scissors, Shoot!")
 print("-------------------")
 choices = ["paper", "rock", "scissors"]
 

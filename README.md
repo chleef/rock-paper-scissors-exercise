@@ -12,8 +12,20 @@ conda create -n my-game-env python=3.8
 conda activate my-game-env
 ```
 
+Additionally, you will need to install package dependencies:
+
+```
+pip install -r requirements.txt
+```
+
+Finally, create a .env file in your respository, using the file to specify your username:
+```
+USER_NAME = "example"
+```
+
 ### To Play:
 
 ```
 python game.py
 ```
+Then, follow the instructions and insert your choice!
